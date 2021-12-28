@@ -1,0 +1,127 @@
+<!--
+	form-control				让表单的宽度为100%，还添加了一些其他的样式
+	form-label					调整表单之间行距（增大）
+	btn							定义提交按钮的一些格式
+	bg-xxxx						背景样式（可以单独设置某一项）
+	form-check-inline			定义一行中显示多个复选框（顶着每一列最前面开始）
+	form-check					定义一个每个复选框独占一行（前面会有1.5em的padding）
+	form-select					定义表单的下拉列表属性
+	multiple					让下拉框可以一次显示多个值（可以单独给，不添加后面的值）
+	form-control-lg				调整布局  居中、增高、增大字体
+	placeholder="Please input your Name"
+	disabled					添加完这个属性将被定义为不可点击
+-->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+				<form action="#">
+					
+					<!--用户名 username-->
+					
+					<div class="col form-control-sm">
+						<label for="username" class="col-form-label-lg">UserName</label>
+						<input type="text" id="username"  class="form-control" aria-describedby="UsernameHelp">
+					</div>
+					<div id="UsernameHelp" class="form-text form-control-sm">We'll never share your email with anyone else.</div>
+					
+					<!--密码 password-->
+					
+					<div class=" col form-control-sm">
+						<label for="password" class="col-form-label-lg">PassWord</label>
+						<input type="password" id="password" class="form-control" aria-describedby="password"/>
+						<div id="password" class="form-text form-control-sm">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+					</div>
+					
+					<!--复选框 checkbox-->
+					
+					<div class="col offset-1 ">
+						<label class="form-check-inline"><input type="checkbox"/>Game</label>
+						<label class="form-check-inline"><input type="checkbox"/>Read</label>
+						<label class="form-check-inline"><input type="checkbox"/>Music</label>
+						<label class="form-check-inline"><input type="checkbox"/>Movie</label>
+						<label class="form-check-inline"><input type="checkbox"/>Sleep</label>
+						<label class="form-check-inline"><input type="checkbox"/>Play a ball game</label>
+					</div>
+					
+					<!-- 单选框 radio -->
+					
+					<div class="col offset-1 ">
+						<label class="form-check-inline"><input type="radio" name="choise"/>remenber me</label>
+						<label class="form-check-inline"><input type="radio" name="choise"/>forgot me</label>
+					</div>
+					
+					<!-- 下拉选项 select -->
+					
+					<div class="col form-control-sm">
+						<select class="form-select" name="age">
+							<option value="age">-----Please select your age-----</option>
+							<option value="">01</option>
+							<option value="">02</option>
+							<option value="">03</option>
+							<option value="">04</option>
+							<option value="">05</option>
+							<option value="">06</option>
+							<option value="">07</option>
+							<option value="">08</option>
+							<option value="">09</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+							<option value="">13</option>
+							<option value="">14</option>
+							<option value="">15</option>
+							<option value="">16</option>
+							<option value="">17</option>
+							<option value="">18</option>
+							<option value="">19</option>
+							<option value="">20</option>
+							<option value="">21</option>
+							<option value="">22</option>
+							<option value="">23</option>
+							<option value="">24</option>
+							<option value="">25</option>
+							<option value="">26</option>
+							<option value="">27</option>
+							<option value="">28</option>
+							<option value="">29</option>
+							<option value="">30</option>
+						</select>
+					</div>
+					
+					<!--文本输入框 textarea-->
+					
+					<div class="col form-control-sm">
+						<textarea rows="5" class="form-control" placeholder="用一段话来描述一下自己吧~"></textarea>
+					</div>
+					
+					<div class="col-1 offset-11">
+						<kbd class="form-control-sm">user.CHY</kbd><br />
+						<code class="disabled text-lg-center">广量集团.cn</code>
+					</div>
+					
+					<div class="col offset-1 col btn-lg">
+						<input type="button" value="Submit" class="btn bg-secondary"/>
+					</div>
+					
+					
+					
+				</form>
+			
+		</div>
+		
+	</div>
+	
+	
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
